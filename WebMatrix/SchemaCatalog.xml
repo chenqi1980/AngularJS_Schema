@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schemas>
+  <schema File="html_5.xsd" FriendlyName="HTML 5" Uri="http://schemas.microsoft.com/intellisense/html5" />
+  <schema File="html_401.xsd" FriendlyName="HTML 4.01" Uri="http://schemas.microsoft.com/intellisense/html-401" />
+  <schema File="jQuery_mobile.xsd" FriendlyName="jQuery Mobile" IsBrowsable="false" 
+          Uri="http://schemas.microsoft.com/intellisense/jquery-mobile" IsSupplemental="true" />
+  <schema File="AngularJS.xsd" FriendlyName="AngularJS" IsBrowsable="false" 
+          Uri="http://schemas.microsoft.com/intellisense/AngularJS" IsSupplemental="true" />
+</schemas>

@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<xsd:schema xmlns='http://schemas.microsoft.com/intellisense/AngularJS'
+      xmlns:xsd='http://www.w3.org/2001/XMLSchema'
+      targetNamespace='http://schemas.microsoft.com/intellisense/AngularJS'
+      xmlns:vs='http://schemas.microsoft.com/Visual-Studio-Intellisense'
+      vs:ishtmlschema="true"
+      vs:isserverschema="false"
+      vs:htmlflavor="5.0"
+      vs:SuccinctFriendlyName="AngularJS"
+      vs:issupplemental="true"
+      vs:icon="angularjs.png"
+      vs:customattrprefix="ng-">
+
+  <xsd:annotation>
+    <xsd:documentation>
+      Microsoft Visual Studio schema for AngularJS
+      ng-* attributes (http://docs.angularjs.org/api/)
+    </xsd:documentation>
+  </xsd:annotation>
+
+  <xsd:attributeGroup name="angularJSCommonAttributeGroup">
+    <xsd:attribute name="ng-bind" type="xsd:string" />
+    <xsd:attribute name="ng-bind-html" type="xsd:string" />
+    <xsd:attribute name="ng-bind-template" type="xsd:string" />
+    <xsd:attribute name="ng-class" type="xsd:string" />
+    <xsd:attribute name="ng-class-even" type="xsd:string" />
+    <xsd:attribute name="ng-class-odd" type="xsd:string" />
+    <xsd:attribute name="ng-click" type="xsd:string" />
+    <xsd:attribute name="ng-cloak" type="xsd:string" vs:category="Angular*" />
+    <xsd:attribute name="ng-controller" type="xsd:string" />
+    <xsd:attribute name="ng-dblclick" type="xsd:string" />
+    <xsd:attribute name="ng-form" type="xsd:string" />
+    <xsd:attribute name="ng-hide" type="xsd:string" />
+    <xsd:attribute name="ng-if" type="xsd:string" />
+    <xsd:attribute name="ng-include" type="xsd:string" vs:category="Angular*" />
+    <xsd:attribute name="ng-init" type="xsd:string" />
+    <xsd:attribute name="ng-keydown" type="xsd:string" />
+    <xsd:attribute name="ng-keypress" type="xsd:string" />
+    <xsd:attribute name="ng-keyup" type="xsd:string" />
+    <xsd:attribute name="ng-mousedown" type="xsd:string" />
+    <xsd:attribute name="ng-mouseenter" type="xsd:string" />
+    <xsd:attribute name="ng-mouseleave" type="xsd:string" />
+    <xsd:attribute name="ng-mousemove" type="xsd:string" />
+    <xsd:attribute name="ng-mouseover" type="xsd:string" />
+    <xsd:attribute name="ng-mouseup" type="xsd:string" />
+    <xsd:attribute name="ng-non-bindable" type="xsd:string" />
+    <xsd:attribute name="ng-pluralize" type="xsd:string" vs:category="Angular*" />
+    <xsd:attribute name="ng-repeat" type="xsd:string" />
+    <xsd:attribute name="ng-show" type="xsd:string" />
+    <xsd:attribute name="ng-style" type="xsd:string" vs:category="Angular*" />
+    <xsd:attribute name="ng-switch" type="xsd:string" />
+    <xsd:attribute name="ng-switch-when" type="xsd:string" />
+    <xsd:attribute name="ng-switch-default" type="xsd:string" />
+    <xsd:attribute name="ng-transclude" type="xsd:string" vs:category="Angular*" />
+    <xsd:attribute name="ng-swipe-left" type="xsd:string" vs:category="ngTouch" />
+    <xsd:attribute name="ng-swipe-right" type="xsd:string" vs:category="ngTouch" />
+    <xsd:attribute name="ng-view" type="xsd:string" vs:category="ngRoute" />
+  </xsd:attributeGroup>
+
+  <xsd:attributeGroup name="angularJSRootAttributeGroup">
+    <xsd:attributeGroup ref="angularJSCommonAttributeGroup" />
+    <xsd:attribute name="ng-app" type="xsd:string" />
+    <xsd:attribute name="ng-csp" type="xsd:string" />
+  </xsd:attributeGroup>
+
+  <xsd:attributeGroup name="angularJSImgAttributeGroup">
+    <xsd:attributeGroup ref="angularJSCommonAttributeGroup" />
+    <xsd:attribute name="ng-src" type="xsd:string" />
+    <xsd:attribute name="ng-srcset" type="xsd:string" />
+  </xsd:attributeGroup>
+
+  <xsd:attributeGroup name="angularJSOptionAttributeGroup">
+    <xsd:attributeGroup ref="angularJSCommonAttributeGroup" />
+    <xsd:attribute name="ng-selected" type="xsd:string" />
+  </xsd:attributeGroup>
+
+  <xsd:attributeGroup name="angularJSFormAttributeGroup">
+    <xsd:attributeGroup ref="angularJSCommonAttributeGroup" />
+    <xsd:attribute name="ng-submit" type="xsd:string" />
+  </xsd:attributeGroup>
+
+  <xsd:attributeGroup name="angularJSDetailAttributeGroup">
+    <xsd:attributeGroup ref="angularJSCommonAttributeGroup" />
+    <xsd:attribute name="ng-open" type="xsd:string" />
+  </xsd:attributeGroup>
+
+  <xsd:attributeGroup name="angularJSInteractiveAttributeGroup">
+    <xsd:attributeGroup ref="angularJSCommonAttributeGroup" />
+    <xsd:attribute name="ng-blur" type="xsd:string" />
+    <xsd:attribute name="ng-copy" type="xsd:string" />
+    <xsd:attribute name="ng-cut" type="xsd:string" />
+    <xsd:attribute name="ng-focus" type="xsd:string" />
+    <xsd:attribute name="ng-paste" type="xsd:string" />
+  </xsd:attributeGroup>
+
+  <xsd:attributeGroup name="angularJSSelectAttributeGroup">
+    <xsd:attributeGroup ref="angularJSInteractiveAttributeGroup" />
+    <xsd:attribute name="ng-required" type="xsd:string" />
+    <xsd:attribute name="ng-options" type="xsd:string" />
+  </xsd:attributeGroup>
+
+  <xsd:attributeGroup name="angularJSTextAreaAttributeGroup">
+    <xsd:attributeGroup ref="angularJSInteractiveAttributeGroup" />
+    <xsd:attribute name="ng-required" type="xsd:string" />
+    <xsd:attribute name="ng-minlength" type="xsd:decimal" />
+    <xsd:attribute name="ng-maxlength" type="xsd:decimal" />
+    <xsd:attribute name="ng-pattern" type="xsd:string" />
+    <xsd:attribute name="ng-change" type="xsd:string" />
+  </xsd:attributeGroup>
+
+  <xsd:attributeGroup name="angularJSInputAttributeGroup">
+    <xsd:attributeGroup ref="angularJSInteractiveAttributeGroup" />
+    <xsd:attribute name="ng-change" type="xsd:string" />
+    <xsd:attribute name="ng-checked" type="xsd:string" />
+    <xsd:attribute name="ng-init" type="xsd:string" />
+    <xsd:attribute name="ng-list" type="xsd:string" />
+    <xsd:attribute name="ng-model" type="xsd:string" />
+    <xsd:attribute name="ng-readonly" type="xsd:string" />
+    <xsd:attribute name="ng-value" type="xsd:string" />
+    
+    <xsd:attribute name="ng-required" type="xsd:string" />
+    <xsd:attribute name="ng-minlength" type="xsd:int" />
+    <xsd:attribute name="ng-maxlength" type="xsd:int" />
+    <xsd:attribute name="ng-pattern" type="xsd:string" />
+    <xsd:attribute name="ng-true-value" type="xsd:string" vs:requiredattributevalue="type:checkbox" />
+    <xsd:attribute name="ng-false-value" type="xsd:string" vs:requiredattributevalue="type:checkbox" />
+    <xsd:attribute name="ng-trim" type="xsd:boolean" vs:requiredattributevalue="type:text" />
+  </xsd:attributeGroup>
+
+  <xsd:attributeGroup name="angularJSAAttributeGroup">
+    <xsd:attributeGroup ref="angularJSInteractiveAttributeGroup" />
+    <xsd:attribute name="ng-href" type="xsd:string" />
+  </xsd:attributeGroup>
+
+  <!-- This element must be the first one in the file! -->
+  <xsd:element name="html">
+    <xsd:complexType>
+      <xsd:attributeGroup ref="angularJSRootAttributeGroup" />
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="img">
+    <xsd:complexType>
+      <xsd:attributeGroup ref="angularJSImgAttributeGroup" />
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="option">
+    <xsd:complexType>
+      <xsd:attributeGroup ref="angularJSOptionAttributeGroup" />
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="form">
+    <xsd:complexType>
+      <xsd:attributeGroup ref="angularJSFormAttributeGroup" />
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="details">
+    <xsd:complexType>
+      <xsd:attributeGroup ref="angularJSDetailAttributeGroup" />
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="window">
+    <xsd:complexType>
+      <xsd:attributeGroup ref="angularJSInteractiveAttributeGroup" />
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="select">
+    <xsd:complexType>
+      <xsd:attributeGroup ref="angularJSSelectAttributeGroup" />
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="textarea">
+    <xsd:complexType>
+      <xsd:attributeGroup ref="angularJSTextAreaAttributeGroup" />
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="input">
+    <xsd:complexType>
+      <xsd:attributeGroup ref="angularJSInputAttributeGroup" />
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="a">
+    <xsd:complexType>
+      <xsd:attributeGroup ref="angularJSAAttributeGroup" />
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
